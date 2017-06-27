@@ -1,5 +1,6 @@
 package ims.vn.androiddms.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -11,9 +12,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import ims.vn.androiddms.Activity.CheckinVisitActivity;
 import ims.vn.androiddms.Activity.OrderActivity;
-import ims.vn.androiddms.R;
 import ims.vn.androiddms.Activity.StatisticalActivity;
+import ims.vn.androiddms.R;
 import ims.vn.androiddms.model.Visit;
 
 public class VisitAdapter extends RecyclerView.Adapter<VisitAdapter.RecyclerViewHolder> {
@@ -62,6 +64,7 @@ public class VisitAdapter extends RecyclerView.Adapter<VisitAdapter.RecyclerView
                 public void onClick(View v) {
                     Intent intent = new Intent(context,StatisticalActivity.class);
                     context.startActivity(intent);
+                    ((Activity)context).finish();
                 }
             });
             btnOrder.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +72,15 @@ public class VisitAdapter extends RecyclerView.Adapter<VisitAdapter.RecyclerView
                 public void onClick(View v) {
                     Intent intent = new Intent(context,OrderActivity.class);
                     context.startActivity(intent);
+                    ((Activity)context).finish();
+                }
+            });
+            btnCheckin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(context,CheckinVisitActivity.class);
+                    context.startActivity(intent);
+                    ((Activity)context).finish();
                 }
             });
 

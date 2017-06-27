@@ -22,7 +22,7 @@
                 android:layout_width="@dimen/widthandheight_monitoring"
                 android:layout_height="@dimen/widthandheight_monitoring"
                 android:layout_marginTop="@dimen/margintop_monitoring"
-                android:src="@drawable/ic_camera" />
+                android:src="@drawable/ic_image" />
         </LinearLayout>
 
         <LinearLayout

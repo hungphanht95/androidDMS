@@ -29,4 +29,7 @@
     <dimen name="heightbutton_rcvisit">35dp</dimen>
     <dimen name="heightrcvisit">300dp</dimen>
     <dimen name="margin_rcvisit">8dp</dimen>
+    <!-- item check in camera -->
+    <dimen name="widthbutton_checkin">120dp</dimen>
+    <dimen name="heightbutton_checkin">35dp</dimen>
 </resources>

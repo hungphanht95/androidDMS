@@ -22,6 +22,13 @@
     <!-- giam sat -->
     <string name="danhsach">Danh sách</string>
     <string name="map">Bản đồ</string>
+    <!-- check in visit -->
+    <string name="tonkho">Tồn kho</string>
+    <string name="hinhanh">Hình ảnh</string>
+    <string name="vitri">Vị trí</string>
+    <string name="chupanh">Chụp ảnh</string>
+    <string name="chupanhtitle">Hình thức chụp ảnh</string>
+
     <!-- dialog giam sat -->
     <string name="sapxeptheokhoangcach">Sắp xếp theo khoảng cách</string>
     <string name="guidulieu">Gửi dữ liệu</string>
@@ -75,7 +82,6 @@
     <string name="duNo">Dư nợ/</string>
     <string name="hanmuc">Hạn mức:</string>
     <string name="chekcout">Check out</string>
-
     <!-- dialog order-->
     <string name="btnOk">Có</string>
     <string name="btnCancel">Không</string>

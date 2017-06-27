@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:src="@drawable/ic_camera" />
+            android:src="@drawable/ic_image" />
     </LinearLayout>
 
     <LinearLayout

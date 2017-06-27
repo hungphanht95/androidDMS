@@ -199,7 +199,6 @@
                 android:layout_weight="1">
 
                 <LinearLayout
-                    android:id="@+id/btnWork"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
@@ -248,7 +247,6 @@
                 android:layout_weight="1">
 
                 <LinearLayout
-                    android:id="@+id/btnTimekeeping"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
@@ -307,7 +305,6 @@
                 android:layout_weight="1">
 
                 <LinearLayout
-                    android:id="@+id/btnOrder"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
