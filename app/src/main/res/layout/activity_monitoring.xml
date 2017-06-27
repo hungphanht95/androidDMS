@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_decript_fab"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/btnmonitoring"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center|left">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/widthandheighticonsettingtitle"
+                android:layout_height="@dimen/widthandheighticonsettingtitle"
+                android:src="@drawable/ic_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/widthandheighticonsettingtitle"
+                android:layout_height="@dimen/widthandheighticonsettingtitle"
+                android:src="@drawable/ic_chat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/marginleftandright"
+            android:layout_weight="0.3"
+            android:gravity="center|right">
+
+            <ImageView
+                android:layout_width="@dimen/widthandheighticonlisttitle"
+                android:layout_height="@dimen/widthandheighticonlisttitle"
+                android:src="@drawable/ic_filter" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_Monitoring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#dcdbdb"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/tabIndicatorColor"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin_floatactionbutton"
+                android:layout_marginRight="@dimen/margin_floatactionbutton"
+                android:clickable="true"
+                android:src="@drawable/ic_load"
+                app:backgroundTint="@color/btnsetting"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:pressedTranslationZ="9dp"
+                app:rippleColor="@color/checkin" />
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vpMonitoring"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_decript_fab"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

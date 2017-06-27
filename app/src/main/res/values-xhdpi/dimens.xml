@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- all -->
+    <dimen name="marginleftandright">10dp</dimen>
+    <!-- title -->
+    <dimen name="textsizetitle">30sp</dimen>
+    <!-- main -->
+    <dimen name="textsizewelcome">25sp</dimen>
+    <dimen name="textsizebutton">20sp</dimen>
+    <dimen name="widthandheighticonsettingtitle">30dp</dimen>
+    <dimen name="widthandheighticonlisttitle">20dp</dimen>
+    <!-- visit order -->
+    <dimen name="paddingleft_visit_order">5dp</dimen>
+    <dimen name="textsize_visit_order">13sp</dimen>
+    <!-- fragment statistical -->
+    <dimen name="textsize_statistical">18sp</dimen>
+    <!-- item recycle giamsat-->
+    <dimen name="textsize_name">15sp</dimen>
+    <dimen name="textsize_check">12sp</dimen>
+    <dimen name="heightlayoutmonitoring">100dp</dimen>
+    <!--item recycle product -->
+    <dimen name="textsize_buttonthem">10sp</dimen>
+    <!-- item recycle visit -->
+    <dimen name="textsize_name_rcvisit">25sp</dimen>
+    <dimen name="textsize_item_rcvisit">20sp</dimen>
+</resources>

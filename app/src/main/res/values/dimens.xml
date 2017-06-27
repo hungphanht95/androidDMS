@@ -1,0 +1,32 @@
+<resources>
+    <!-- main -->
+    <dimen name="marginleftandrightfooter">5dp</dimen>
+    <dimen name="text_decript_schedule_margin_bot">120dp</dimen>
+    <dimen name="text_fab_child_margin_right">80dp</dimen>
+    <dimen name="text_pading_lr">10dp</dimen>
+    <dimen name="margin_floatactionbutton">20dp</dimen>
+    <dimen name="textsize_twenty">20sp</dimen>
+    <!-- dialog visit -->
+    <dimen name="marginright_text">90dp</dimen>
+
+    <dimen name="marginbottom_button_sx">320dp</dimen>
+    <dimen name="marginbottom_button_guidulieu">260dp</dimen>
+    <dimen name="marginbottom_button_khaibaovitri">200dp</dimen>
+    <dimen name="marginbottom_button_dongbodl">140dp</dimen>
+    <dimen name="marginbottom_button_themkh">80dp</dimen>
+
+    <dimen name="marginbottom_text_sapxep">335dp</dimen>
+    <dimen name="marginbottom_text_guidulieu">275dp</dimen>
+    <dimen name="marginbottom_text_khaibaovitri">215dp</dimen>
+    <dimen name="marginbottom_text_dongbodl">155dp</dimen>
+    <dimen name="marginbottom_text_themkh">95dp</dimen>
+    <!-- item recycle giám sát -->
+    <dimen name="widthandheight_monitoring">50dp</dimen>
+    <dimen name="margintop_monitoring">5dp</dimen>
+    <!-- item recycle visit -->
+    <dimen name="textsize_button_visit">14sp</dimen>
+    <dimen name="widthbutton_rcvisit">100dp</dimen>
+    <dimen name="heightbutton_rcvisit">35dp</dimen>
+    <dimen name="heightrcvisit">300dp</dimen>
+    <dimen name="margin_rcvisit">0dp</dimen>
+</resources>

@@ -1,3 +1,74 @@
 <resources>
     <string name="app_name">AndroidDMS</string>
+    <!-- main activity-->
+    <string name="viengtham">Viếng thăm</string>
+    <string name="chamcong">Chấm công</string>
+    <string name="congviec">Công việc</string>
+    <string name="giamsat">Giám sát</string>
+    <string name="checkin">Check-in</string>
+    <string name="donhang">Đơn hàng</string>
+    <string name="tongdai">Tổng đài hỗ trợ: </string>
+    <string name="chaomung">Chào mừng đến với Android DMS</string>
+    <string name="xinchao">Xin chào</string>
+    <!-- tittle -->
+    <string name="trangchu">Trang chủ</string>
+    <!-- tham quan -->
+    <string name="searchint">Tìm kiếm</string>
+    <string name="order">Đặt hàng</string>
+    <string name="seller">Bán hàng</string>
+    <string name="debt">Công nợ</string>
+    <!-- giam sat -->
+    <string name="danhsach">Danh sách</string>
+    <string name="map">Bản đồ</string>
+    <!-- dialog giam sat -->
+    <string name="sapxeptheokhoangcach">Sắp xếp theo khoảng cách</string>
+    <string name="guidulieu">Gửi dữ liệu</string>
+    <string name="khaibaovitri">Khai báo vị trí</string>
+    <string name="dongbodulieu">Đồng bộ dữ liệu</string>
+    <string name="themkhachhang">Thêm khách hàng</string>
+    <!-- tham quan mh đặt hàng-->
+    <string name="khachang">Khách hàng</string>
+    <string name="nguoilienhe">Người liên hệ</string>
+    <string name="sodienthoai">Số điện thoại</string>
+    <string name="ngaygiao">Ngày giao</string>
+    <string name="tenkhacktra">Tên khách trả</string>
+    <string name="loaidon">Loại đơn hàng</string>
+    <string name="dathang">Đặt hàng</string>
+    <string name="banhangtheoxe">Bán hàng theo xe</string>
+    <string name="khoxuat">Kho xuất</string>
+    <string name="chietkhau">Chiết khấu</string>
+    <string name="ghichu">Ghi chú</string>
+    <string name="themsp">Thêm sản phẩm</string>
+    <string name="khuyenmai">Khuyến mãi</string>
+    <string name="capnhat">Cập nhật</string>
+    <!--fragment statistical-->
+    <string name="thongketittle">Thống kê giao dịch tháng này</string>
+    <string name="sampham">Sản phẩm</string>
+    <string name="sldat">SL Đặt</string>
+    <string name="thanhtien">Thành tiền</string>
+    <string name="tongcong">Tổng cộng</string>
+    <string name="slban">SL Bán</string>
+    <string name="thoigian">Thời gian</string>
+    <string name="noidung">Nội dung</string>
+    <string name="sotien">Số tiền</string>
+    <!-- item recycle monitoring -->
+    <string name="veingtham">Viếng thăm</string>
+    <string name="donhang_monitor">Đơn hàng</string>
+    <string name="kehoach">Kế hoạch</string>
+    <string name="thuchien">Thực hiện</string>
+    <!-- item recycle product -->
+    <string name="giachan">Giá chẵn:</string>
+    <string name="giale">Giá lẻ:</string>
+    <string name="tonchan">Tồn chẵn:</string>
+    <string name="tonle">Tồn lẻ:</string>
+    <string name="xemthem">Xem thêm</string>
+    <!-- item recycle visit-->
+    <string name="xemthem_visit"> - Xem thêm...</string>
+    <string name="xemghichu">Xem ghi chú</string>
+    <string name="xemthongke">Xem thống kê</string>
+    <string name="dathang_visit">Đặt hàng</string>
+    <string name="checkin_visit">Check-in</string>
+    <!-- dialog order-->
+    <string name="btnOk">Có</string>
+    <string name="btnCancel">Không</string>
 </resources>

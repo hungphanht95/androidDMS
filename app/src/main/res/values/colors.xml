@@ -3,4 +3,27 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!-- main -->
+    <color name="btnsetting">#e49a41</color>
+    <color name="btnwork">#7a9e9a</color>
+    <color name="btnorder">#8cc63f</color>
+    <color name="btntimekeeping">#b285dc</color>
+    <color name="checkin">#006837</color>
+    <color name="btnmonitoring">#de4c74</color>
+    <color name="green">#8cc63f</color>
+    <color name="blue">#58c8f1</color>
+    <color name="tran">#00000000</color>
+    <color name="bg_text_decript_fab">#b0050303</color>
+    <color name="text_decript_fab">#ffffff</color>
+    <color name="backround_item_statistical">#f1ef9a</color>
+    <color name="backround_header">#006837</color>
+    <color name="tabIndicatorColor">#FF0C0C</color>
+    <color name="black">#000000</color>
+    <color name="bg_list">#dcdbdb</color>
+    <color name="header_list_statistical">#f2e9cb</color>
+    <color name="footer_list_statistical">#c2beae</color>
+    <color name="text_color_list">#c1c1c1</color>
+    <color name="text_green_visit">#08ab10</color>
+    <color name="bg_layout_visit_order">#348e8e8e</color>
+
 </resources>
