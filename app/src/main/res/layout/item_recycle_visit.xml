@@ -9,7 +9,7 @@
         android:layout_marginLeft="@dimen/margin_rcvisit"
         android:layout_marginRight="@dimen/margin_rcvisit"
         android:layout_marginTop="@dimen/margin_rcvisit"
-        android:background="@android:drawable/dialog_holo_light_frame"
+        android:background="@drawable/border_item_visit"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="@dimen/heightrcvisit">
@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.5"
-            android:background="@color/green"
+            android:background="@color/btnsetting"
             android:orientation="vertical">
 
             <LinearLayout
@@ -79,6 +79,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:background="@color/text_decript_fab"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

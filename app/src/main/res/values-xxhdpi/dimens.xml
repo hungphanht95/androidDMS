@@ -3,7 +3,7 @@
     <!-- all -->
     <dimen name="marginleftandright">10dp</dimen>
     <!-- title -->
-    <dimen name="textsizetitle">30sp</dimen>
+    <dimen name="textsizetitle">25sp</dimen>
     <!-- main -->
     <dimen name="textsizewelcome">25sp</dimen>
     <dimen name="textsizebutton">20sp</dimen>
@@ -13,7 +13,7 @@
     <dimen name="paddingleft_visit_order">5dp</dimen>
     <dimen name="textsize_visit_order">13sp</dimen>
     <!-- fragment statistical -->
-    <dimen name="textsize_statistical">18sp</dimen>
+    <dimen name="textsize_statistical">15sp</dimen>
     <!-- item recycle giamsat-->
     <dimen name="textsize_name">15sp</dimen>
     <dimen name="textsize_check">12sp</dimen>
@@ -21,6 +21,6 @@
     <!--item recycle product -->
     <dimen name="textsize_buttonthem">10sp</dimen>
     <!-- item recycle visit -->
-    <dimen name="textsize_name_rcvisit">25sp</dimen>
-    <dimen name="textsize_item_rcvisit">20sp</dimen>
+    <dimen name="textsize_name_rcvisit">20sp</dimen>
+    <dimen name="textsize_item_rcvisit">15sp</dimen>
 </resources>

@@ -19,7 +19,7 @@ public class DebtFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_statistical_sell, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_statistical_debt, container, false);
         return rootView;
     }
     public void onViewCreated(Bundle savedInstanceState) {

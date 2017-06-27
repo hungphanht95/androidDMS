@@ -95,12 +95,12 @@ public class StatisticalActivity extends FragmentActivity {
         });
     }
 
+    @Override
     public void onBackPressed() {
+       super.onBackPressed();
+        Intent intent = new Intent(StatisticalActivity.this, VisitActivity.class);
+        startActivity(intent);
         finish();
-    }
-
-    public void onSuperBackPressed() {
-        super.onBackPressed();
     }
 
 

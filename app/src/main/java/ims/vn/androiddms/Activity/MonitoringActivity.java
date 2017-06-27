@@ -85,11 +85,12 @@ public class MonitoringActivity extends FragmentActivity {
         });
     }
 
+    @Override
     public void onBackPressed(){
-        finish();
-    }
-    public void onSuperBackPressed(){
         super.onBackPressed();
+        Intent intent = new Intent(MonitoringActivity.this,MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 

@@ -12,6 +12,8 @@
     <string name="xinchao">Xin chào</string>
     <!-- tittle -->
     <string name="trangchu">Trang chủ</string>
+    <string name="sanpham">Sản phẩm</string>
+    <string name="thongke">Thống kê</string>
     <!-- tham quan -->
     <string name="searchint">Tìm kiếm</string>
     <string name="order">Đặt hàng</string>
@@ -68,6 +70,12 @@
     <string name="xemthongke">Xem thống kê</string>
     <string name="dathang_visit">Đặt hàng</string>
     <string name="checkin_visit">Check-in</string>
+    <!-- check in visit -->
+    <string name="thoigianviengtham">Thời gian viếng thăm :</string>
+    <string name="duNo">Dư nợ/</string>
+    <string name="hanmuc">Hạn mức:</string>
+    <string name="chekcout">Check out</string>
+
     <!-- dialog order-->
     <string name="btnOk">Có</string>
     <string name="btnCancel">Không</string>

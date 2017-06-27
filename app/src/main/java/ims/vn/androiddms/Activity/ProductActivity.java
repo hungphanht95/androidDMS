@@ -68,11 +68,12 @@ public class ProductActivity extends AppCompatActivity {
         floatActionButton();
     }
 
-    public void onBackPressed(){
-        finish();
-    }
-    public void onSuperBackPressed(){
+    @Override
+    public void onBackPressed() {
         super.onBackPressed();
+        Intent intent = new Intent(ProductActivity.this,OrderActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void floatActionButton(){

@@ -64,17 +64,16 @@ public class OrderActivity extends AppCompatActivity {
 
     }
 
-    public void onBackPressed(){
-        finish();
-    }
-    public void onSuperBackPressed(){
+    @Override
+    public void onBackPressed() {
         super.onBackPressed();
+        Intent intent = new Intent(OrderActivity.this,VisitActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void dialogOrder() {
         dialogOrder = new Dialog(OrderActivity.this);
-        dialogOrder.setCancelable(false);
-        dialogOrder.setCanceledOnTouchOutside(false);
         dialogOrder.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialogOrder.getWindow().setBackgroundDrawableResource(R.color.tran);
         dialogOrder.setContentView(R.layout.dialog_order);

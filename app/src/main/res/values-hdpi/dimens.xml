@@ -21,6 +21,6 @@
     <!--item recycle product -->
     <dimen name="textsize_buttonthem">16sp</dimen>
     <!-- item recycle visit -->
-    <dimen name="textsize_name_rcvisit">20sp</dimen>
-    <dimen name="textsize_item_rcvisit">15sp</dimen>
+    <dimen name="textsize_name_rcvisit">25sp</dimen>
+    <dimen name="textsize_item_rcvisit">20sp</dimen>
 </resources>

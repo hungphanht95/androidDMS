@@ -69,11 +69,12 @@ public class VisitActivity extends AppCompatActivity {
 
     }
 
+    @Override
     public void onBackPressed(){
-        finish();
-    }
-    public void onSuperBackPressed(){
         super.onBackPressed();
+        Intent intent = new Intent(VisitActivity.this,MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void floatActionButton(){
