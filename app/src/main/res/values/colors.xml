@@ -25,5 +25,22 @@
     <color name="text_color_list">#c1c1c1</color>
     <color name="text_green_visit">#08ab10</color>
     <color name="bg_layout_visit_order">#348e8e8e</color>
+    <color name="bg_login">#44ffffff</color>
+    <color name="bg_edittextlogin">#a6d1d1d1</color>
+    <color name="btnlogin">#f9e49a41</color>
 
+    
+    <color name="xanhdam">#006837</color>
+    <color name="ghinhat">#f5f5f5</color>
+    <color name="ghidam">#505050</color>
+    <color name="vangnhe">#fcfaaa</color>
+    <color name="xanhnon">#8cc63f</color>
+    <color name="btncam">#e49a41</color>
+
+    <color name="textbutton">#fff</color>
+    <color name="textHearder">#fff</color>
+    <color name="textXanh">#006837</color>
+    <color name="textghi">#505050</color>
+    <color name="texthellodms">#8cc63f</color>
+    <color name="backroundmain">#f5f5f5</color>
 </resources>

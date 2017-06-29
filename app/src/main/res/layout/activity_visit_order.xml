@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_list"
-    android:orientation="vertical"
-    tools:context="ims.vn.androiddms.MainActivity">
+    android:background="@color/ghinhat"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:background="@color/text_green_visit"
+        android:background="@color/backround_header"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -23,8 +22,8 @@
 
             <ImageView
                 android:id="@+id/btnBack"
-                android:layout_width="@dimen/widthandheighticonsettingtitle"
-                android:layout_height="@dimen/widthandheighticonsettingtitle"
+                android:layout_width="@dimen/widthbtnback"
+                android:layout_height="@dimen/hightbtnback"
                 android:src="@drawable/ic_back" />
         </LinearLayout>
 
@@ -33,12 +32,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
+
             <TextView
-                android:textStyle="bold"
-                android:textSize="@dimen/textsizetitle"
-                android:text="@string/order"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/order"
+                android:textColor="@color/textHearder"
+                android:textSize="@dimen/textsizetitle"
+                android:textStyle="normal" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,31 +47,33 @@
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/marginleftandright"
             android:layout_weight="0.4">
+            <!--<LinearLayout-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="@dimen/widthandheighticonsettingtitle"-->
+            <!--android:layout_height="@dimen/widthandheighticonsettingtitle"-->
+            <!--android:src="@drawable/ic_chat" />-->
+            <!--</LinearLayout>-->
+
             <LinearLayout
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right">
 
                 <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="@dimen/widthandheighticonsettingtitle"
-                    android:layout_height="@dimen/widthandheighticonsettingtitle"
-                    android:src="@drawable/ic_chat" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="@dimen/widthandheighticonlisttitle"
-                    android:layout_height="@dimen/widthandheighticonlisttitle"
+                    android:layout_width="@dimen/widthbtnfilter"
+                    android:layout_height="@dimen/heightbtnfilter"
                     android:src="@drawable/ic_filter" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -119,6 +122,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginleftandright"
                         android:background="@color/tran"
                         android:textColor="@color/black"
                         android:textSize="@dimen/textsize_visit_order" />
@@ -157,6 +161,7 @@
                         android:id="@+id/editText3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginleftandright"
                         android:background="@color/tran"
                         android:textColor="@color/black"
                         android:textSize="@dimen/textsize_visit_order" />
@@ -193,6 +198,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginleftandright"
                         android:background="@color/tran"
                         android:textColor="@color/black"
                         android:textSize="@dimen/textsize_visit_order" />
@@ -241,6 +247,7 @@
                         android:id="@+id/editText4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginleftandright"
                         android:background="@color/tran"
                         android:textColor="@color/black"
                         android:textSize="@dimen/textsize_visit_order" />
@@ -277,6 +284,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginleftandright"
                         android:background="@color/tran"
                         android:textColor="@color/black"
                         android:textSize="@dimen/textsize_visit_order" />
@@ -384,12 +392,13 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center">
+                        android:gravity="center|left">
 
                         <TextView
                             android:id="@+id/txtShowKho"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/marginleftandright"
                             android:textColor="@color/black" />
                     </LinearLayout>
 
@@ -437,8 +446,10 @@
                     android:layout_weight="1">
 
                     <EditText
+                        android:id="@+id/editText6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marginleftandright"
                         android:background="@color/tran"
                         android:textColor="@color/black"
                         android:textSize="@dimen/textsize_visit_order" />
@@ -480,6 +491,7 @@
                     android:id="@+id/editText2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/marginleftandright"
                     android:background="@color/tran"
                     android:textColor="@color/black"
                     android:textSize="@dimen/textsize_visit_order" />
@@ -491,7 +503,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:background="@android:color/white"
+        android:background="@drawable/bordertop"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -527,11 +539,11 @@
                     android:gravity="center">
 
                     <TextView
-                        android:textSize="@dimen/textsize_visit_order"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/themsp"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -569,11 +581,11 @@
                     android:gravity="center">
 
                     <TextView
-                        android:textSize="@dimen/textsize_visit_order"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/khuyenmai"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -611,11 +623,11 @@
                     android:gravity="center">
 
                     <TextView
-                        android:textSize="@dimen/textsize_visit_order"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/capnhat"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_visit_order" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

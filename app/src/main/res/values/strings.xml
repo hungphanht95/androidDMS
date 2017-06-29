@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">AndroidDMS</string>
+    <string name="splashscreen">Welcome To Android DMS</string>
+    <!--Maps-->
+    <string name="GOOGLE_MAPS_API_KEY">AIzaSyBY_ZJrlWQ0hfY5zH_5SGhEaOkMMuGcpP4</string>
+    <!-- login -->
+    <string name="login">Login</string>
+    <string name="btnlogin">Đăng nhập</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="create">Create</string>
+    <string name="anaccount">an account</string>
     <!-- main activity-->
     <string name="viengtham">Viếng thăm</string>
     <string name="chamcong">Chấm công</string>
@@ -7,9 +17,9 @@
     <string name="giamsat">Giám sát</string>
     <string name="checkin">Check-in</string>
     <string name="donhang">Đơn hàng</string>
-    <string name="tongdai">Tổng đài hỗ trợ: </string>
+    <string name="tongdai">Tổng đài: </string>
     <string name="chaomung">Chào mừng đến với Android DMS</string>
-    <string name="xinchao">Xin chào</string>
+    <string name="xinchao">Xin chào, </string>
     <!-- tittle -->
     <string name="trangchu">Trang chủ</string>
     <string name="sanpham">Sản phẩm</string>
@@ -23,12 +33,13 @@
     <string name="danhsach">Danh sách</string>
     <string name="map">Bản đồ</string>
     <!-- check in visit -->
+    <string name="hansd">Hạn SD</string>
     <string name="tonkho">Tồn kho</string>
     <string name="hinhanh">Hình ảnh</string>
     <string name="vitri">Vị trí</string>
     <string name="chupanh">Chụp ảnh</string>
     <string name="chupanhtitle">Hình thức chụp ảnh</string>
-
+    <string name="luubaocao">Lưu báo cáo</string>
     <!-- dialog giam sat -->
     <string name="sapxeptheokhoangcach">Sắp xếp theo khoảng cách</string>
     <string name="guidulieu">Gửi dữ liệu</string>
@@ -85,4 +96,5 @@
     <!-- dialog order-->
     <string name="btnOk">Có</string>
     <string name="btnCancel">Không</string>
+    <string name="texthintusername">Giám đốc</string>
 </resources>

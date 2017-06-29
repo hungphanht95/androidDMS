@@ -10,6 +10,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -21,6 +23,7 @@ import ims.vn.androiddms.model.Visit;
 
 public class VisitActivity extends AppCompatActivity {
 
+    Animation slideUp;
     ImageView imgvBack;
     RecyclerView recyclerView;
     VisitAdapter adapter;
@@ -35,6 +38,8 @@ public class VisitActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_visit);
+
+//        slideUp = AnimationUtils.loadAnimation(this,R.anim.slider_up);
 
         this.getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
@@ -94,23 +99,12 @@ public class VisitActivity extends AppCompatActivity {
         });
     }
     public ArrayList<Visit> createData(){
-        data.add(new Visit("chihoa-001","chihoa","gjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkgjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkkjgggggg","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
-        data.add(new Visit("chihoa-001","chihoa","46-loc-thuduc-hochiminh-vietnam","0123445678"));
+
+        data.add(new Visit("chihoa-001","chihoa 1","46-loc-thuduc-hochiminh-vietnam","0123445678"));
+        data.add(new Visit("chihoa-002","chihoa 2","46-loc-thuduc-hochiminh-vietnam","0123445678"));
+        data.add(new Visit("chihoa-003","chihoa 3" ,"46-loc-thuduc-hochiminh-vietnam","0123445678"));
+        data.add(new Visit("chihoa-004","chihoa 4","46-loc-thuduc-hochiminh-vietnam","0123445678"));
+        data.add(new Visit("chihoa-005","chihoa 5","46-loc-thuduc-hochiminh-vietnam","0123445678"));
         return data;
     }
 }

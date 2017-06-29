@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 import ims.vn.androiddms.Adapter.WareHouseAdapter;
 import ims.vn.androiddms.R;
+import ims.vn.androiddms.config.ConfigApplication;
 import ims.vn.androiddms.model.WareHouse;
 
 /**
@@ -46,6 +47,9 @@ public class OrderActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OrderActivity.this, ProductActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt(ConfigApplication.DATA_DIRECT_TRANSFER, ConfigApplication.REQUEST_DIRECT_ORDER);
+                intent.putExtra(ConfigApplication.BUNDLE_DATA_TRANSFER, bundle);
                 startActivity(intent);
                 finish();
             }

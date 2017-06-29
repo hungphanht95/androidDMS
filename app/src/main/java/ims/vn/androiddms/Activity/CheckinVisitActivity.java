@@ -12,6 +12,7 @@ import android.widget.ImageView;
 
 import ims.vn.androiddms.Adapter.PaperAdapter;
 import ims.vn.androiddms.Fragment.CameraFragment;
+import ims.vn.androiddms.Fragment.LocationFragment;
 import ims.vn.androiddms.Fragment.MapFragment;
 import ims.vn.androiddms.Fragment.StockFragment;
 import ims.vn.androiddms.R;
@@ -28,7 +29,7 @@ public class CheckinVisitActivity extends FragmentActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_statistical);
+        setContentView(R.layout.activity_visit_checkin);
         addControls();
         addEvents();
     }
@@ -37,7 +38,7 @@ public class CheckinVisitActivity extends FragmentActivity {
         paperAdapter = new PaperAdapter(getSupportFragmentManager());
         paperAdapter.addFragment(new StockFragment());
         paperAdapter.addFragment(new CameraFragment());
-        paperAdapter.addFragment(new MapFragment());
+        paperAdapter.addFragment(new LocationFragment());
         viewPager.setAdapter(paperAdapter);
 //        viewPager.setCurrentItem(1);
     }

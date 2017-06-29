@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:background="@color/text_green_visit"
+        android:background="@color/backround_header"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/btnBack"
-                android:layout_width="@dimen/widthandheighticonsettingtitle"
-                android:layout_height="@dimen/widthandheighticonsettingtitle"
+                android:layout_width="@dimen/widthbtnback"
+                android:layout_height="@dimen/hightbtnback"
                 android:src="@drawable/ic_back" />
         </LinearLayout>
 
@@ -32,9 +32,10 @@
             android:layout_weight="1"
             android:gravity="center">
             <TextView
-                android:textStyle="bold"
+                android:textStyle="normal"
                 android:textSize="@dimen/textsizetitle"
                 android:text="@string/thongke"
+                android:textColor="@color/textHearder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -44,27 +45,27 @@
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/marginleftandright"
             android:layout_weight="0.4">
+            <!--<LinearLayout-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageView2"-->
+                    <!--android:layout_width="@dimen/widthandheighticonsettingtitle"-->
+                    <!--android:layout_height="@dimen/widthandheighticonsettingtitle"-->
+                    <!--android:src="@drawable/ic_chat" />-->
+            <!--</LinearLayout>-->
+
             <LinearLayout
-                android:gravity="center"
+                android:gravity="center|right"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
-
                 <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="@dimen/widthandheighticonsettingtitle"
-                    android:layout_height="@dimen/widthandheighticonsettingtitle"
-                    android:src="@drawable/ic_chat" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="@dimen/widthandheighticonlisttitle"
-                    android:layout_height="@dimen/widthandheighticonlisttitle"
+                    android:layout_width="@dimen/widthbtnfilter"
+                    android:layout_height="@dimen/heightbtnfilter"
                     android:src="@drawable/ic_filter" />
             </LinearLayout>
         </LinearLayout>

@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/text_decript_fab"
+    android:background="@color/backround_header"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:background="@color/btnmonitoring"
+        android:background="@color/backround_header"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/btnBack"
-                android:layout_width="@dimen/widthandheighticonsettingtitle"
-                android:layout_height="@dimen/widthandheighticonsettingtitle"
+                android:layout_width="@dimen/widthbtnback"
+                android:layout_height="@dimen/hightbtnback"
                 android:src="@drawable/ic_back" />
         </LinearLayout>
 
@@ -31,12 +31,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
+
             <TextView
-                android:textStyle="bold"
-                android:textSize="@dimen/textsizetitle"
-                android:text="@string/giamsat"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/giamsat"
+                android:textColor="@color/textHearder"
+                android:textSize="@dimen/textsizetitle"
+                android:textStyle="normal" />
         </LinearLayout>
 
         <LinearLayout
@@ -44,27 +46,28 @@
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/marginleftandright"
             android:layout_weight="0.4">
+            <!--<LinearLayout-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="@dimen/widthandheighticonsettingtitle"-->
+            <!--android:layout_height="@dimen/widthandheighticonsettingtitle"-->
+            <!--android:src="@drawable/ic_chat" />-->
+            <!--</LinearLayout>-->
+
             <LinearLayout
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right">
 
                 <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="@dimen/widthandheighticonsettingtitle"
-                    android:layout_height="@dimen/widthandheighticonsettingtitle"
-                    android:src="@drawable/ic_chat" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="@dimen/widthandheighticonlisttitle"
-                    android:layout_height="@dimen/widthandheighticonlisttitle"
+                    android:layout_width="@dimen/widthbtnfilter"
+                    android:layout_height="@dimen/heightbtnfilter"
                     android:src="@drawable/ic_filter" />
             </LinearLayout>
         </LinearLayout>
@@ -103,6 +106,17 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vpMonitoring"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_decript_fab"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.design.widget.AppBarLayout>
 
             <android.support.design.widget.FloatingActionButton
                 android:layout_width="wrap_content"
@@ -118,19 +132,6 @@
                 app:elevation="6dp"
                 app:pressedTranslationZ="9dp"
                 app:rippleColor="@color/checkin" />
-
-            <android.support.design.widget.AppBarLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-                <android.support.v4.view.ViewPager
-                    android:id="@+id/vpMonitoring"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/text_decript_fab"
-                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-            </android.support.design.widget.AppBarLayout>
         </RelativeLayout>
 
     </LinearLayout>

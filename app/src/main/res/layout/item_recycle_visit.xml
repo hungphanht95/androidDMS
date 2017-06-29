@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.5"
-            android:background="@color/btnsetting"
+            android:background="@color/xanhnon"
             android:orientation="vertical">
 
             <LinearLayout
@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:maxLength="50"
                     android:text="chi asasdcf"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textHearder"
                     android:textSize="@dimen/textsize_name_rcvisit" />
             </LinearLayout>
 
@@ -48,9 +48,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.1"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_margin="1sp">
 
                     <ImageView
+                        android:layout_margin="1sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_user" />
@@ -63,13 +65,16 @@
                     android:gravity="center|left">
 
                     <TextView
+                        android:layout_marginLeft="2dp"
                         android:id="@+id/txtName"
+                        android:textColor="@color/textHearder"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="chi asasdcf"
                         android:textSize="@dimen/textsize_item_rcvisit" />
 
                     <TextView
+                        android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/xemthem_visit"
@@ -109,6 +114,7 @@
                     android:gravity="center|left">
 
                     <TextView
+                        android:layout_marginLeft="@dimen/maginlefttext"
                         android:id="@+id/txtaddress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -128,7 +134,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.1"
-                    android:gravity="center">
+                    android:gravity="center"
+                    >
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -143,6 +150,7 @@
                     android:gravity="center|left">
 
                     <TextView
+                        android:layout_marginLeft="@dimen/maginlefttext"
                         android:id="@+id/txtphone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -176,6 +184,7 @@
                     android:gravity="center|left">
 
                     <TextView
+                        android:layout_marginLeft="@dimen/maginlefttext"
                         android:id="@+id/viewnote"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -209,6 +218,7 @@
                     android:gravity="center|left">
 
                     <TextView
+                        android:layout_marginLeft="@dimen/maginlefttext"
                         android:id="@+id/viewStatistical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -263,6 +273,7 @@
                             android:gravity="center|left">
 
                             <TextView
+                                android:layout_marginLeft="@dimen/marginleftbtn"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/dathang_visit"
@@ -311,6 +322,7 @@
                             android:gravity="center|left">
 
                             <TextView
+                                android:layout_marginLeft="@dimen/marginleftbtn"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/checkin_visit"

@@ -16,7 +16,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.2"
-            android:gravity="center|top">
+            android:gravity="center_vertical|center_horizontal">
 
             <ImageView
                 android:layout_width="@dimen/widthandheight_monitoring"
@@ -41,7 +41,7 @@
                     android:id="@+id/txtNameNv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textXanh"
                     android:textSize="@dimen/textsize_name"
                     android:textStyle="bold" />
 
@@ -103,7 +103,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/viengtham"
                             android:textColor="@color/green"
-                            android:textSize="@dimen/textsize_name" />
+                            android:textSize="@dimen/textsize_check" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -113,11 +113,12 @@
                         android:gravity="center">
 
                         <TextView
+                            android:id="@+id/textView13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/donhang_monitor"
                             android:textColor="@color/green"
-                            android:textSize="@dimen/textsize_name" />
+                            android:textSize="@dimen/textsize_check" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -138,7 +139,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/kehoach"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/textghi"
                             android:textSize="@dimen/textsize_name"
                             android:textStyle="bold" />
                     </LinearLayout>
@@ -190,7 +191,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/thuchien"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/textghi"
                             android:textSize="@dimen/textsize_name"
                             android:textStyle="bold" />
                     </LinearLayout>

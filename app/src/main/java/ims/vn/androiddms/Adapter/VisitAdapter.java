@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,6 +23,8 @@ import ims.vn.androiddms.model.Visit;
 public class VisitAdapter extends RecyclerView.Adapter<VisitAdapter.RecyclerViewHolder> {
 
     private ArrayList<Visit> listData = new ArrayList<>();
+    private Context context;
+    private int lastPosition = -1;
 
     public VisitAdapter(ArrayList<Visit> listData) {
         this.listData = listData;
@@ -38,7 +42,17 @@ public class VisitAdapter extends RecyclerView.Adapter<VisitAdapter.RecyclerView
         holder.txtName.setText(listData.get(position).getName());
         holder.txtAddress.setText(listData.get(position).getAddress());
         holder.txtPhone.setText(listData.get(position).getPhone());
+        setAnimation(holder.itemView, position);
+    }
 
+    private void setAnimation(View viewToAnimate, int position)
+    {
+        if (position > lastPosition)
+        {
+            Animation animation = AnimationUtils.loadAnimation(context,R.anim.slider_up);
+            viewToAnimate.startAnimation(animation);
+            lastPosition = position;
+        }
     }
     @Override
     public int getItemCount() {
@@ -49,7 +63,6 @@ public class VisitAdapter extends RecyclerView.Adapter<VisitAdapter.RecyclerView
         LinearLayout btnOrder,btnCheckin;
         public RecyclerViewHolder(View itemView) {
             super(itemView);
-            final Context context;
             context = itemView.getContext();
             txtDetailName = (TextView) itemView.findViewById(R.id.txtDetailName);
             txtName = (TextView) itemView.findViewById(R.id.txtName);

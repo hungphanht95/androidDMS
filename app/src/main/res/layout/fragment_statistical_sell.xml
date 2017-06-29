@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/bg_list"
+    android:background="@color/ghinhat"
     tools:context="ims.vn.androiddms.MainActivity">
     <LinearLayout
-        android:background="@color/header_list_statistical"
+        android:background="@color/vangnhe"
         android:orientation="horizontal"
         android:layout_weight="0.2"
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
             android:layout_height="match_parent"/>
     </LinearLayout>
     <LinearLayout
-        android:background="@color/footer_list_statistical"
+        android:background="@color/vangnhe"
         android:layout_weight="0.2"
         android:layout_width="match_parent"
         android:layout_height="0dp">
@@ -85,18 +85,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="0.4"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
             <TextView
-                android:textSize="@dimen/textsize_statistical"
-                android:textStyle="bold"
-                android:textColor="@color/black"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_statistical"
+                android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:gravity="center"
             android:layout_weight="0.6"

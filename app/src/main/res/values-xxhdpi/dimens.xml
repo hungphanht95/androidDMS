@@ -3,7 +3,7 @@
     <!-- all -->
     <dimen name="marginleftandright">10dp</dimen>
     <!-- title -->
-    <dimen name="textsizetitle">25sp</dimen>
+    <dimen name="textsizetitle">20sp</dimen>
     <!-- main -->
     <dimen name="textsizewelcome">25sp</dimen>
     <dimen name="textsizebutton">20sp</dimen>
@@ -23,4 +23,17 @@
     <!-- item recycle visit -->
     <dimen name="textsize_name_rcvisit">20sp</dimen>
     <dimen name="textsize_item_rcvisit">15sp</dimen>
+    <!--login-->
+    <dimen name="leftandrightedittext">15dp</dimen>
+    <dimen name="bottomedittext">5dp</dimen>
+    <dimen name="textsizetitlelogin">40sp</dimen>
+    <dimen name="textsizebuttonlogin">25sp</dimen>
+    <dimen name="textsizeedittextlogin">20sp</dimen>
+    <dimen name="textsizecreateaccount">18sp</dimen>
+    <dimen name="withimvMain">50dp</dimen>
+    <dimen name="hightimvmain">50dp</dimen>
+    <dimen name="hightbtnback">50dp</dimen>
+    <dimen name="heightbtnfilter">30dp</dimen>
+    <dimen name="maginlefttext">2dp</dimen>
+    <dimen name="marginleftbtn">1dp</dimen>
 </resources>

@@ -3,10 +3,10 @@
     <!-- all -->
     <dimen name="marginleftandright">15dp</dimen>
     <!-- title -->
-    <dimen name="textsizetitle">40sp</dimen>
+    <dimen name="textsizetitle">30sp</dimen>
     <!-- main -->
     <dimen name="textsizewelcome">35sp</dimen>
-    <dimen name="textsizebutton">30sp</dimen>
+    <dimen name="textsizebutton">35sp</dimen>
     <dimen name="widthandheighticonsettingtitle">40dp</dimen>
     <dimen name="widthandheighticonlisttitle">30dp</dimen>
     <!-- visit order -->
@@ -23,4 +23,17 @@
     <!-- item recycle visit -->
     <dimen name="textsize_name_rcvisit">25sp</dimen>
     <dimen name="textsize_item_rcvisit">20sp</dimen>
+    <!--login-->
+    <dimen name="leftandrightedittext">20dp</dimen>
+    <dimen name="bottomedittext">10dp</dimen>
+    <dimen name="textsizetitlelogin">40sp</dimen>
+    <dimen name="textsizebuttonlogin">28sp</dimen>
+    <dimen name="textsizeedittextlogin">25sp</dimen>
+    <dimen name="textsizecreateaccount">23sp</dimen>
+    <dimen name="withimvMain">50dp</dimen>
+    <dimen name="hightimvmain">50dp</dimen>
+    <dimen name="hightbtnback">50dp</dimen>
+    <dimen name="heightbtnfilter">30dp</dimen>
+    <dimen name="maginlefttext">2dp</dimen>
+    <dimen name="marginleftbtn">1dp</dimen>
 </resources>

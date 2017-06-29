@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import java.util.ArrayList;
 
@@ -25,6 +27,7 @@ public class StaffFragment extends Fragment {
 
     RecyclerView recyclerView;
     StaffAdapter adapter;
+    Animation slideUp;
     private ArrayList<ListStaff> data = new ArrayList<>();
 
     @Override
@@ -42,6 +45,7 @@ public class StaffFragment extends Fragment {
                 .permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
+        slideUp = AnimationUtils.loadAnimation(getContext(),R.anim.slider_up);
         getActivity().getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         recyclerView = (RecyclerView) view.findViewById(R.id.rcMonitoring);
@@ -50,6 +54,7 @@ public class StaffFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
+        recyclerView.startAnimation(slideUp);
         recyclerView.setAdapter(adapter);
         recyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {

@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:background="@color/text_green_visit"
+        android:background="@color/backround_header"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/btnBack"
-                android:layout_width="@dimen/widthandheighticonsettingtitle"
-                android:layout_height="@dimen/widthandheighticonsettingtitle"
+                android:layout_width="@dimen/widthbtnback"
+                android:layout_height="@dimen/hightbtnback"
                 android:src="@drawable/ic_back" />
         </LinearLayout>
 
@@ -32,7 +32,8 @@
             android:layout_weight="1"
             android:gravity="center">
             <TextView
-                android:textStyle="bold"
+                android:textColor="@color/textHearder"
+                android:textStyle="normal"
                 android:textSize="@dimen/textsizetitle"
                 android:text="@string/checkin"
                 android:layout_width="wrap_content"
@@ -44,27 +45,27 @@
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/marginleftandright"
             android:layout_weight="0.4">
+            <!--<LinearLayout-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageView2"-->
+                    <!--android:layout_width="@dimen/widthandheighticonsettingtitle"-->
+                    <!--android:layout_height="@dimen/widthandheighticonsettingtitle"-->
+                    <!--android:src="@drawable/ic_chat" />-->
+            <!--</LinearLayout>-->
+
             <LinearLayout
-                android:gravity="center"
+                android:gravity="center|right"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
-
                 <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="@dimen/widthandheighticonsettingtitle"
-                    android:layout_height="@dimen/widthandheighticonsettingtitle"
-                    android:src="@drawable/ic_chat" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="@dimen/widthandheighticonlisttitle"
-                    android:layout_height="@dimen/widthandheighticonlisttitle"
+                    android:layout_width="@dimen/widthbtnfilter"
+                    android:layout_height="@dimen/heightbtnfilter"
                     android:src="@drawable/ic_filter" />
             </LinearLayout>
         </LinearLayout>
@@ -104,30 +105,34 @@
             android:layout_width="match_parent"
             android:layout_height="0dp">
             <TextView
+                android:text="Chị A - 001"
                 android:textSize="@dimen/textsize_name_rcvisit"
                 android:textColor="@color/black"
                 android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+
         <LinearLayout
-            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_marginLeft="@dimen/marginleftandright"
             android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:gravity="center|left">
+
             <TextView
-                android:text="@string/nguoilienhe"
-                android:textSize="@dimen/textsize_item_rcvisit"
-                android:textColor="@color/text_decript_fab"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/nguoilienhe"
+                android:textColor="@color/textghi"
+                android:textSize="@dimen/textsize_item_rcvisit" />
+
             <TextView
-                android:textSize="@dimen/textsize_item_rcvisit"
-                android:textColor="@color/text_decript_fab"
                 android:id="@+id/txtDetailName"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_decript_fab"
+                android:textSize="@dimen/textsize_item_rcvisit" />
         </LinearLayout>
     </LinearLayout>
 
@@ -139,6 +144,7 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:layout_marginLeft="@dimen/marginleftandright"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -170,6 +176,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginLeft="@dimen/marginleftandright"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -201,6 +208,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginLeft="@dimen/marginleftandright"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -208,7 +216,7 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.4"
+                android:layout_weight="0.5"
                 android:gravity="center">
                 <TextView
                     android:textSize="@dimen/textsize_item_rcvisit"
@@ -295,7 +303,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
-        android:background="@drawable/borderproduct"
+        android:background="@drawable/bordertop"
         android:orientation="horizontal">
 
         <LinearLayout

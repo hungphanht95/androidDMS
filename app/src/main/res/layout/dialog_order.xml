@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_text_decript_fab"
-    android:orientation="vertical"
     android:gravity="center"
-    tools:context="ims.vn.androiddms.MainActivity">
+    android:orientation="vertical">
 
     <ListView
         android:id="@+id/lv_dialog_order"

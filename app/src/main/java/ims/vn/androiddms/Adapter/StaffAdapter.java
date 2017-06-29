@@ -36,7 +36,6 @@ public class StaffAdapter extends RecyclerView.Adapter<StaffAdapter.RecyclerView
         holder.txtThucHienDH.setText(listData.get(position).getThuchiendh());
         holder.txtKeHoachDH.setText(listData.get(position).getKehoachdh());
     }
-
     @Override
     public int getItemCount() {
         return listData.size();

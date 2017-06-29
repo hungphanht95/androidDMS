@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_main"
+    android:background="@color/backroundmain"
     android:orientation="vertical"
     tools:context="ims.vn.androiddms.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.4"
+        android:layout_weight="0.3"
         android:orientation="vertical">
 
         <LinearLayout
-            android:background="@color/blue"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.4">
+            android:layout_weight="0.3"
+            android:background="@color/backround_header">
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -44,9 +45,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/trangchu"
-                    android:textColor="@color/text_decript_fab"
+                    android:textColor="@color/textHearder"
                     android:textSize="@dimen/textsizetitle"
-                    android:textStyle="bold" />
+                    android:textStyle="normal" />
             </LinearLayout>
 
             <LinearLayout
@@ -67,7 +68,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:orientation="vertical">
 
             <LinearLayout
@@ -80,15 +81,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/chaomung"
-                    android:textColor="@color/text_decript_fab"
-                    android:textSize="@dimen/textsizebutton"
-                    android:textStyle="bold" />
+                    android:textColor="@color/texthellodms"
+                    android:textSize="@dimen/textsizebutton" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_weight="1.1">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -102,7 +102,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/marginleftandrightfooter"
                         android:text="@string/xinchao"
-                        android:textColor="@color/text_decript_fab"
+                        android:textColor="@color/textXanh"
                         android:textSize="@dimen/textsizewelcome" />
                 </LinearLayout>
 
@@ -113,12 +113,13 @@
                     android:gravity="center|left">
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/txtusername"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="giám đốc"
-                        android:textColor="@color/text_decript_fab"
-                        android:textSize="@dimen/textsizewelcome" />
+                        android:hint="@string/texthintusername"
+                        android:textColorHint="@color/xanhdam"
+                        android:textSize="@dimen/textsizewelcome"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -157,18 +158,19 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/btnsetting"
+                        android:background="@color/xanhdam"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_marginTop="@dimen/marginleftandright"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center_vertical">
 
                             <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="@dimen/withimvMain"
+                                android:layout_height="@dimen/hightimvmain"
                                 android:src="@drawable/ic_flag" />
                         </LinearLayout>
 
@@ -199,6 +201,7 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    android:id="@+id/btnCongviec"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
@@ -214,11 +217,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_marginTop="@dimen/marginleftandright"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center_vertical">
 
                             <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="@dimen/withimvMain"
+                                android:layout_height="@dimen/hightimvmain"
                                 android:src="@drawable/ic_worker" />
                         </LinearLayout>
 
@@ -247,6 +251,7 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    android:id="@+id/btnChamcong"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
@@ -255,18 +260,20 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/btntimekeeping"
+                        android:background="@color/xanhnon"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_marginTop="@dimen/marginleftandright"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+
+                            android:gravity="center_horizontal|center_vertical">
 
                             <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="@dimen/withimvMain"
+                                android:layout_height="@dimen/hightimvmain"
                                 android:src="@drawable/ic_confirm" />
                         </LinearLayout>
 
@@ -305,6 +312,7 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    android:id="@+id/btnDonhang"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
@@ -313,18 +321,19 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/btnorder"
+                        android:background="@color/xanhnon"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_marginTop="@dimen/marginleftandright"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center_vertical">
 
                             <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="@dimen/withimvMain"
+                                android:layout_height="@dimen/hightimvmain"
                                 android:src="@drawable/ic_list" />
                         </LinearLayout>
 
@@ -363,18 +372,19 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/btnmonitoring"
+                        android:background="@color/btncam"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_marginTop="@dimen/marginleftandright"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center_vertical">
 
                             <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="@dimen/withimvMain"
+                                android:layout_height="@dimen/hightimvmain"
                                 android:src="@drawable/ic_monitor" />
                         </LinearLayout>
 
@@ -403,6 +413,7 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    android:id="@+id/btncheckin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
@@ -418,11 +429,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_marginTop="@dimen/marginleftandright"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center_vertical">
 
                             <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="@dimen/withimvMain"
+                                android:layout_height="@dimen/hightimvmain"
                                 android:src="@drawable/ic_location" />
                         </LinearLayout>
 
@@ -448,10 +460,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:background="@color/blue"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1">
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.1"
+        android:background="@color/vangnhe">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -464,23 +477,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tongdai"
-                android:textColor="@color/text_decript_fab"
+                android:textColor="@color/textXanh"
                 android:textSize="@dimen/textsizebutton" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginLeft="@dimen/marginleftandrightfooter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marginleftandrightfooter"
             android:layout_weight="1"
             android:gravity="center|left">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txthotline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="012345678"
-                android:textColor="@color/text_decript_fab"
+                android:textColor="@color/textXanh"
                 android:textSize="@dimen/textsizebutton"
                 android:textStyle="bold" />
         </LinearLayout>

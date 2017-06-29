@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="abcxyz"
-                android:textColor="@color/black"
+                android:textColor="@color/textXanh"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -57,7 +57,7 @@
                 android:gravity="center|left">
                 <TextView
                     android:textSize="@dimen/textsize_name"
-                    android:textColor="@color/text_color_list"
+                    android:textColor="@color/textghi"
                     android:text="@string/giachan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -75,13 +75,13 @@
                 android:gravity="center|left">
                 <TextView
                     android:textSize="@dimen/textsize_name"
-                    android:textColor="@color/text_color_list"
+                    android:textColor="@color/textghi"
                     android:text="@string/giale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:textSize="@dimen/textsize_name"
-                    android:textColor="@color/text_color_list"
+                    android:textColor="@color/textghi"
                     android:id="@+id/txtGiaLe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -102,7 +102,7 @@
                 android:gravity="center|left">
                 <TextView
                     android:textSize="@dimen/textsize_name"
-                    android:textColor="@color/text_color_list"
+                    android:textColor="@color/textghi"
                     android:text="@string/tonchan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />

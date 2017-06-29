@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.2"
-        android:background="@color/header_list_statistical"
+        android:background="@color/vangnhe"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -73,7 +73,7 @@
             android:layout_height="match_parent"/>
     </LinearLayout>
     <LinearLayout
-        android:background="@color/footer_list_statistical"
+        android:background="@color/vangnhe"
         android:layout_weight="0.2"
         android:layout_width="match_parent"
         android:layout_height="0dp">
